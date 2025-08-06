@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Absen Siswa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Data Absen Siswa</h1>
+
+    <form id="formAbsen">
+      <input type="text" id="ID" placeholder="ID" required>
+      <input type="text" id="NIS" placeholder="NIS" required>
+      <input type="text" id="NAMA" placeholder="Nama" required>
+      <input type="text" id="JENIS_KELAMIN" placeholder="Jenis Kelamin" required>
+      <input type="text" id="KELAS" placeholder="Kelas" required>
+      <input type="text" id="KETERANGAN" placeholder="Keterangan" required>
+      <button type="submit">Tambah</button>
+      <button type="button" id="resetBtn">Reset</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>NIS</th>
+          <th>Nama</th>
+          <th>Jenis Kelamin</th>
+          <th>Kelas</th>
+          <th>Keterangan</th>
+        </tr>
+      </thead>
+      <tbody id="dataBody"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
